@@ -1,0 +1,28 @@
+<div class="container">
+    <img src="papel de parede site.png" class="papelParede-form">
+    <div class="login-form">
+        @if(form){
+        <img src="logozinh.png" alt="Logo">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <mat-label>Entre com o seu email</mat-label>
+                <input
+                  matInput
+                  placeholder="pat@example.com"
+                  formControlName="email"
+                  (blur)="updateErrorMessage()"
+                  required
+                />
+                @if (email && email.invalid) {
+                  <mat-error>{{errorMessage()}}</mat-error>
+                }
+              </mat-form-field>
+              <mat-form-field>
+                <mat-label>Entre com sua senha</mat-label>
+                <input matInput [type]="hide() ? 'password' : 'text'" />
+              </mat-form-field>
+            <button type="submit" mat-button color="primary">Entrar</button>
+        </form>
+        }
+    </div>
+</div>

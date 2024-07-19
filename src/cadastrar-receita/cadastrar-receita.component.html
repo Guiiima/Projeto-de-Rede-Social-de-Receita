@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Cadastrar Nova Receita</h1>
+    @if(form){
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <mat-form-field>
+            <mat-label>Input</mat-label>
+            <input matInput formControlName="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Descrição</mat-label>
+            <textarea matInput formControlName="descricao"></textarea>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Ingredientes</mat-label>
+            <textarea matInput formControlName="ingredientes"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Modo de Preparo</mat-label>
+            <textarea matInput formControlName="modoPreparo"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Tempo de Preparo (minutos)</mat-label>
+            <input matInput formControlName="tempoPreparo">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Porções</mat-label>
+            <input matInput formControlName="porcoes">
+        </mat-form-field>
+    </form>
+    }
+</div>

@@ -1,0 +1,53 @@
+.navbar {
+    background-color: rgba(248, 229, 215, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);   
+    height: 70px; 
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%; 
+
+}
+.navbar-brand a {
+    color: #988f88;
+    font-weight: bold;
+}
+.nav-link {
+    position: relative; 
+    color: #988f88;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+    gap: 30px;
+    width: 100%;
+}
+.nav-link {
+    position: relative; 
+    color: #988f88;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.mat-icon {
+    position: relative; 
+    color: #beb8b3;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+.mat-icon:hover {
+    cursor: default;
+    color: #555; 
+}
+.nav-link:hover {
+    color: #555; 
+    cursor: default;
+}

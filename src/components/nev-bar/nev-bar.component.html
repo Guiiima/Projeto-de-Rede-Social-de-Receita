@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <div class="navbar-brand" style="font-family: 'Roboto', sans-serif;">
+      <a>Seja Bem-vindo(a)</a>
+    </div>
+    <div class="navbar-nav">
+      <a class="nav-link" routerLink="/" routerLinkActive="active">Minha Rede</a>
+      <a class="nav-link" routerLink="/sobre" routerLinkActive="active">Sobre</a>
+      <a class="nav-link" routerLink="/contato" routerLinkActive="active">Contato</a>
+      <button mat-icon-button [matMenuTriggerFor]="menu" style="border: none; outline: none; background-color: transparent;">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/conta" routerLinkActive="active">
+          <mat-icon>account_circle</mat-icon> Conta 
+        </button>
+        <button mat-menu-item routerLink="/CadastrarReceita" routerLinkActive="active">
+            <mat-icon>add_circle</mat-icon> Cadastrar Receita 
+          </button>
+        <button mat-menu-item routerLink="/conta" routerLinkActive="active">
+            <mat-icon>people</mat-icon> Solicitação de Amizade 
+          </button>
+        <button mat-menu-item routerLink="/logout" routerLinkActive="active">
+          <mat-icon>exit_to_app</mat-icon> Logout 
+        </button>
+      </mat-menu>
+    </div>
+  </nav>
